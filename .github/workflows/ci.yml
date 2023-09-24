@@ -16,6 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo ${{ vars.COMPANY_NAME }}
+      - run: echo ${{ secrets.MYSQL_PASSWORD }}
       - run: echo "My host is $MY_HOST"
       - run: echo "Hello ${{ github.actor }}"
 
